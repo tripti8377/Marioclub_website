@@ -1,0 +1,249 @@
+body,header,ul,li,h2,a {
+    margin: 0;
+    font-family: arial;
+}
+header{
+    background-color: #ff6a00;
+    text-align: center;
+    position:fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+header h2{
+    color: white;
+    border: 5px;
+    border-radius: 20px;
+    border: white solid;
+    padding: 6px 12px;
+    display: inline-block;
+    margin: 10 0;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    max-width: 100%;
+}
+.banner .welcome{
+    position: absolute;
+    top: 30%;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.banner h2{
+    font-size: 74px;
+}
+.banner h2 span{
+    font-size: 1.3em;
+}
+div{
+    background-color: #e3ba17;
+    color: white;
+}
+.navigation{
+    background-color: #f4f4f4;
+    margin:0;
+    padding: 20px;
+    position: sticky;
+    top: 63px;
+}
+.navigation ul{
+    text-align: center;
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+.navigation li{
+    display: inline-block;
+    width: 25%;
+}
+.navigation a{
+    text-decoration: none;
+    color: #7b7777;
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+article h2{
+    color: #ff6a00;
+    font-size: 48px;
+}
+.thumbnails {
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+    padding: 0;
+}
+.thumbnails li{
+    display: inline-block;
+    width: 40%;
+    padding: 20px;
+}
+main ul.thumbnails li img{
+    width: 100%;
+}
+.join{
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #7b7777;
+    padding: 20px;
+}
+.join h2{
+    color: #ff6a00;
+}
+form{
+    margin-bottom: 0;
+}
+form input{
+    font-size: 24px;
+    border: 4px white solid;
+    border-radius: 28px;
+    text-align: center;
+    margin: 0 20px;
+    padding: auto;
+}
+footer{
+    background-color: #ff6a00;
+    text-align: center;
+    color: white;
+}
+footer p{
+    margin: 0;
+    padding: 20px;
+}
+
+/*pseudo classes */
+
+.navigation li:hover{
+    font-size: larger;
+    font-weight: bold;
+}
+.join form input:focus{
+    border: 2px #ff6a00 solid;
+    outline: none;
+}
+.join form input:valid{
+    border: 2px #1e00ff solid;
+}
+.thumbnails li:hover{
+    position: relative;
+    bottom: 25px;
+}
+
+p::selection{
+    background-color: #ff8b37;
+    color: white;
+}
+
+@media screen and (max-width: 900px){
+    .banner .welcome{
+        position:relative;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .banner h2{
+        font-size: 40px;
+    }
+
+    .banner h2 span{
+        font-size: 1em;
+    }
+
+    .banner h2 br{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .banner .welcome{
+        position:relative;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .banner h2{
+        font-size: 40px;
+    }
+
+    .banner h2 span{
+        font-size: 1em;
+    }
+
+    .banner h2 br{
+        display: none;
+    }
+
+    .thumbnails li{
+        display: block;
+        width: 100%;
+        padding: 20px;
+    }  
+    
+    .thumbnails li:hover{
+        position: static;
+    }
+
+    .navigation{
+        padding: 20px;
+        position: sticky;
+        top: 63px;
+    }
+    .navigation ul{
+        text-align: center;
+        white-space: nowrap;
+    }
+    .navigation li{
+        display: inline-block;
+        width: 25%;
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header{
+        position:static;
+        width: 100%;
+    }
+    .banner .welcome{
+        position:relative;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .banner h2{
+        font-size: 40px;
+    }
+
+    .banner h2 span{
+        font-size: 1em;
+    }
+
+    .banner h2 br{
+        display: none;
+    }
+    .navigation{
+        padding:0;
+        top: 0;
+    }
+    .navigation ul{
+        padding: 0;
+    }
+    .navigation li{
+        display: block;
+        padding: 10px;
+        font-size: 1em;
+    }
+}
